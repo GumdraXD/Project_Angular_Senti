@@ -1,0 +1,1 @@
+C:\CSULA\Project_Angular_Senti\project_angular_senti.client\obj\Debug\project_angular_senti.client.esproj.CoreCompileInputs.cache

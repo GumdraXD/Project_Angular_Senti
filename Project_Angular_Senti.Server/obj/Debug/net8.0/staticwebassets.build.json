@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "U3wfQVqS/Val+GoMjKjQVReHiBoTgFI6xQj2XBJ9Y+s=",
+  "Source": "Project_Angular_Senti.Server",
+  "BasePath": "_content/Project_Angular_Senti.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\CSULA\\Project_Angular_Senti\\project_angular_senti.client\\project_angular_senti.client.esproj",
+      "Version": 2,
+      "Source": "project_angular_senti.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
