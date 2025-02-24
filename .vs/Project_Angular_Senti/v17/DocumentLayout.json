@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\CSULA\\Project_Angular_Senti\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{171FE0C0-EF7A-4521-8550-6F92E2E4375A}|Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj|c:\\csula\\project_angular_senti\\project_angular_senti.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{171FE0C0-EF7A-4521-8550-6F92E2E4375A}|Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj|solutionrelative:project_angular_senti.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171FE0C0-EF7A-4521-8550-6F92E2E4375A}|Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj|c:\\csula\\project_angular_senti\\project_angular_senti.server\\surveycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{171FE0C0-EF7A-4521-8550-6F92E2E4375A}|Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj|solutionrelative:project_angular_senti.server\\surveycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{171FE0C0-EF7A-4521-8550-6F92E2E4375A}|Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj|c:\\csula\\project_angular_senti\\project_angular_senti.server\\survey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{171FE0C0-EF7A-4521-8550-6F92E2E4375A}|Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj|solutionrelative:project_angular_senti.server\\survey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,16 +23,8 @@
       "RelativeMoniker": "D:0:0:{171FE0C0-EF7A-4521-8550-6F92E2E4375A}|Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj|solutionrelative:project_angular_senti.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{171FE0C0-EF7A-4521-8550-6F92E2E4375A}|Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj|c:\\csula\\project_angular_senti\\project_angular_senti.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{171FE0C0-EF7A-4521-8550-6F92E2E4375A}|Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj|solutionrelative:project_angular_senti.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C1683C27-6512-47D7-ADF2-C8A99EC2EDAC}|project_angular_senti.client\\project_angular_senti.client.esproj|c:\\csula\\project_angular_senti\\project_angular_senti.client\\src\\app\\surveypage\\surveypage.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{C1683C27-6512-47D7-ADF2-C8A99EC2EDAC}|project_angular_senti.client\\project_angular_senti.client.esproj|solutionrelative:project_angular_senti.client\\src\\app\\surveypage\\surveypage.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{171FE0C0-EF7A-4521-8550-6F92E2E4375A}|Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj|c:\\csula\\project_angular_senti\\project_angular_senti.server\\surveycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{171FE0C0-EF7A-4521-8550-6F92E2E4375A}|Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj|solutionrelative:project_angular_senti.server\\surveycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Survey.cs",
               "DocumentMoniker": "C:\\CSULA\\Project_Angular_Senti\\Project_Angular_Senti.Server\\Survey.cs",
               "RelativeDocumentMoniker": "Project_Angular_Senti.Server\\Survey.cs",
@@ -46,12 +46,11 @@
               "RelativeToolTip": "Project_Angular_Senti.Server\\Survey.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T00:51:04.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T00:51:04.936Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\CSULA\\Project_Angular_Senti\\Project_Angular_Senti.Server\\appsettings.json",
               "RelativeDocumentMoniker": "Project_Angular_Senti.Server\\appsettings.json",
@@ -64,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "survey-card.component.html",
               "DocumentMoniker": "C:\\CSULA\\Project_Angular_Senti\\project_angular_senti.client\\src\\app\\survey-card\\survey-card.component.html",
               "RelativeDocumentMoniker": "project_angular_senti.client\\src\\app\\survey-card\\survey-card.component.html",
@@ -72,12 +71,11 @@
               "RelativeToolTip": "project_angular_senti.client\\src\\app\\survey-card\\survey-card.component.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-19T03:21:29.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T03:21:29.811Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\CSULA\\Project_Angular_Senti\\Project_Angular_Senti.Server\\Program.cs",
               "RelativeDocumentMoniker": "Project_Angular_Senti.Server\\Program.cs",
@@ -85,12 +83,11 @@
               "RelativeToolTip": "Project_Angular_Senti.Server\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T01:49:52.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T01:49:52.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "surveypage.component.ts",
               "DocumentMoniker": "C:\\CSULA\\Project_Angular_Senti\\project_angular_senti.client\\src\\app\\surveypage\\surveypage.component.ts",
               "RelativeDocumentMoniker": "project_angular_senti.client\\src\\app\\surveypage\\surveypage.component.ts",
@@ -98,12 +95,11 @@
               "RelativeToolTip": "project_angular_senti.client\\src\\app\\surveypage\\surveypage.component.ts",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-02-19T03:27:41.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T03:27:41.279Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "SurveyContext.cs",
               "DocumentMoniker": "C:\\CSULA\\Project_Angular_Senti\\Project_Angular_Senti.Server\\SurveyContext.cs",
               "RelativeDocumentMoniker": "Project_Angular_Senti.Server\\SurveyContext.cs",
@@ -111,8 +107,7 @@
               "RelativeToolTip": "Project_Angular_Senti.Server\\SurveyContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T01:12:41.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T01:12:41.777Z"
             }
           ]
         }
