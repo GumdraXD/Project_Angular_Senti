@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Project_Angular_Senti.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99b33bccf54e2a572b056b82b8221207184f4117")]
 [assembly: System.Reflection.AssemblyProductAttribute("Project_Angular_Senti.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Project_Angular_Senti.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
