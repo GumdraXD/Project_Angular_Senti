@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "U3wfQVqS/Val+GoMjKjQVReHiBoTgFI6xQj2XBJ9Y+s=",
+  "Hash": "owMv0pfjJAREvqqExe7Q5qYKkdH2bkf5scymo8I+Xjw=",
   "Source": "Project_Angular_Senti.Server",
   "BasePath": "_content/Project_Angular_Senti.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\CSULA\\Project_Angular_Senti\\project_angular_senti.client\\project_angular_senti.client.esproj",
+      "Identity": "C:\\Users\\bombe\\source\\repos\\GumdraXD\\Project_Senti\\project_angular_senti.client\\project_angular_senti.client.esproj",
       "Version": 2,
       "Source": "project_angular_senti.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
@@ -19,5 +19,6 @@
     }
   ],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

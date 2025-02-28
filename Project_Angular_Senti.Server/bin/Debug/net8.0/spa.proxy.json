@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:4200",
 "RedirectUrl": "",
 "LaunchCommand": "npm start",
-"WorkingDirectory": "C:\\CSULA\\Project_Angular_Senti\\Project_Angular_Senti.Server\\..\\project_angular_senti.client",
+"WorkingDirectory": "C:\\Users\\bombe\\source\\repos\\GumdraXD\\Project_Senti\\Project_Angular_Senti.Server\\..\\project_angular_senti.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

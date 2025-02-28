@@ -1,1 +1,13 @@
 <p>surveypage works!</p>
+
+<p>Testing the Database Saving</p>
+<form (submit)="saveData()">
+  <label for="FirstName">First Name:</label>
+  <input type="text" id="FirstName" [(ngModel)] ="survey.FirstName" name="FirstName" required />
+
+  <label for="LastName">Last Name:</label>
+  <input type="text" id="LastName" [(ngModel)]="survey.LastName" name="LastName" required />
+
+  <button type="submit">Submit</button>
+</form>
+<p *ngIf="message">{{ message }}</p>
