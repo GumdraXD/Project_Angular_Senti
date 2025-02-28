@@ -1,1 +1,56 @@
-<p>surveypage works!</p>
+<div class="survey-container">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <h1>QTC Survey Form</h1>
+  
+      <div *ngFor="let question of surveyQuestions" class="question">
+        <label>{{ question.question }}</label>
+  
+        <!-- Scale -->
+        <div *ngIf="question.type === 'scale'" class="scale-question">
+          <div *ngFor="let scale of [1, 2, 3, 4, 5]">
+            <input 
+              type="radio" 
+              [formControlName]="question.question" 
+              [value]="scale" 
+              id="{{ question.question }}-{{ scale }}">
+            <label for="{{ question.question }}-{{ scale }}">{{ scale }}</label>
+          </div>
+        </div>
+  
+        <!-- Yes/No -->
+        <div *ngIf="question.type === 'yesno'" class="yesno-question">
+          <label>
+            <input 
+              type="radio" 
+              [formControlName]="question.question" 
+              [value]="'yes'" 
+              id="{{ question.question }}-yes">
+            Yes
+          </label>
+          <label>
+            <input 
+              type="radio" 
+              [formControlName]="question.question" 
+              [value]="'no'" 
+              id="{{ question.question }}-no">
+            No
+          </label>
+        </div>
+  
+        <!-- Open--->
+        <div *ngIf="question.type === 'text'" class="text-question">
+          <input 
+            type="text" 
+            [formControlName]="question.question" 
+            placeholder="Enter your response here">
+        </div>
+  
+        <div *ngIf="myForm.get(question.question)?.invalid && myForm.get(question.question)?.touched" class="error-message">
+          <p>This field is required.</p>
+        </div>
+      </div>
+  
+      <button type="submit" [disabled]="myForm.invalid" class="submit-button">Submit</button>
+    </form>
+  </div>
+  
