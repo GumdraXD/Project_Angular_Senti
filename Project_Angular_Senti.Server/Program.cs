@@ -4,6 +4,7 @@ using System.Runtime.InteropServices;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Project_Angular_Senti.Server.Data;
 
 
 namespace Project_Angular_Senti.Server
@@ -29,9 +30,18 @@ namespace Project_Angular_Senti.Server
    
              */
 
-            
-
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAngularApp",
+                    policy =>
+                    {
+                        policy.WithOrigins("http://localhost:4200")  // Allow requests from Angular
+                              .AllowAnyHeader()
+                              .AllowAnyMethod();
+                    });
+            });
 
             // Add services to the container.
 
@@ -79,7 +89,8 @@ namespace Project_Angular_Senti.Server
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-          
+
+            app.UseCors("AllowAngularApp");
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
@@ -88,15 +99,6 @@ namespace Project_Angular_Senti.Server
             app.MapControllers();
 
             app.MapFallbackToFile("/index.html");
-
-
-            app.MapPost("/Survey", (Survey person, SurveyContext context) =>
-            {
-                context.Add(person);
-                context.SaveChanges();
-            })
-            .WithName("CreatePerson")
-            .WithOpenApi();
 
             app.Run();
         }
