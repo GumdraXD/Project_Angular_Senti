@@ -20,9 +20,17 @@ namespace Project_Angular_Senti.Server.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateUser([FromBody] Survey survey)
+        public async Task<IActionResult> saveSurvey([FromBody] Survey survey)
         {
-            if (survey == null) return BadRequest();
+            if (survey == null) return BadRequest("Invalid survey data.");
+            if (!ModelState.IsValid) {
+                foreach (var error in ModelState)
+                {
+                    Console.WriteLine($"Key: {error.Key}, Error: {string.Join(", ", error.Value.Errors.Select(e => e.ErrorMessage))}");
+                }
+                return BadRequest(ModelState); 
+            }
+            
 
             _context.Survey.Add(survey);
             await _context.SaveChangesAsync();

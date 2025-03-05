@@ -3,14 +3,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Project_Angular_Senti.Server.Model
 {
-    [Table("Surveys")]
+    [Table("SurveyDBs")]
     public class Survey
     {
 
         [Key]
         public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        [Required]
+        public string Respondent { get; set; }
+        [Required]
+        public Dictionary<string, string> Responses { get; set; } = new Dictionary<string, string>();
 
 
 

@@ -1,27 +1,85 @@
-import { Component } from '@angular/core';
-import { UserService } from '../services/user.service';
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 import { SurveyService } from '../services/survey.service';
 
 // https://angular.dev/guide/forms#data-flow-in-reactive-forms
 
 @Component({
   selector: 'app-surveypage',
-  standalone: false,
+  standalone: true,
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './surveypage.component.html',
   styleUrl: './surveypage.component.css'
 })
-export class SurveypageComponent {
-  survey = { FirstName: '', LastName: '' };
+export class SurveypageComponent implements OnInit {
+  surveyQuestions = [
+    { question: 'Was the event staff professional and courteous?', type: 'scale' },
+    { question: 'Was the event staff knowledgeable?', type: 'scale' },
+    { question: 'Did the services provided meet your needs?', type: 'scale' },
+    { question: 'How helpful was the event staff at the event?', type: 'scale' },
+    { question: 'How satisfied are you with the Group Event?', type: 'scale' },
+    { question: 'Any additional comments concerning the group event experience?', type: 'text' },
+    { question: 'Would you like someone from QTC to contact you about your exam service?', type: 'yesno' }
+  ];
+
+  myForm: FormGroup = new FormGroup({});
+
+  ngOnInit() {
+    this.myForm = new FormGroup(this.createFormControls());
+  }
+
+  private createFormControls(): { [key: string]: FormControl } {
+    return this.surveyQuestions.reduce((acc, item) => {
+      acc[item.question] = this.createFormControl(item.type);
+      return acc;
+    }, {} as { [key: string]: FormControl });
+  }
+
+  private createFormControl(type: string): FormControl {
+    switch (type) {
+      case 'scale':
+      case 'yesno':
+        return new FormControl('', Validators.required);
+      case 'text':
+        return new FormControl('', Validators.maxLength(200));
+      default:
+        return new FormControl('');
+    }
+  }
+  constructor(private surveyService: SurveyService) { }
+
   message = '';
 
-  saveData() {
-    this.surveyService.saveSurvey(this.survey).subscribe({
-      next: () => this.message = 'Data saved successfully!',
-      error: () => this.message = 'Error saving data!'
-    });
+  onSubmit(): void {
+    if (this.myForm.valid) {
+      const surveyData = {
+        respondent: "Anonymous",
+        responses: this.convertResponsesToStrings(this.myForm.value)
+      };
+
+      console.log('Survey Data:', JSON.stringify(surveyData, null, 2));
+
+      this.surveyService.saveSurvey(surveyData).subscribe({
+        next: () => {
+          this.message = 'Survey submitted successfully!';
+          this.myForm.reset();
+        }, error: () => this.message = 'Error submitting survey!'
+      });
+    } else {
+      console.log('Form is invalid');
+    }
   }
-  /* Constructor used during the testing
-  constructor(private userService: UserService) { } */
-  constructor(private surveyService: SurveyService) { }
+
+  private convertResponsesToStrings(responses: { [key: string]: any }): { [key: string]: string } {
+    const convertedResponses: { [key: string]: string } = {};
+    for (const key in responses) {
+      if (responses.hasOwnProperty(key)) {
+        convertedResponses[key] = responses[key].toString();
+      }
+    }
+    return convertedResponses;
+  }
 
 }

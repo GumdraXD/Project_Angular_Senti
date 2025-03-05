@@ -11,17 +11,17 @@ namespace Project_Angular_Senti.Server.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Surveys",
+                name: "SurveyDBs",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Respondent = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Responses = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Surveys", x => x.Id);
+                    table.PrimaryKey("PK_SurveyDBs", x => x.Id);
                 });
         }
 
@@ -29,7 +29,7 @@ namespace Project_Angular_Senti.Server.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Surveys");
+                name: "SurveyDBs");
         }
     }
 }

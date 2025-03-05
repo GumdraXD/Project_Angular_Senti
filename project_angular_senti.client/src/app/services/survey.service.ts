@@ -11,8 +11,8 @@ export class SurveyService {
 
   constructor(private http: HttpClient) { }
 
-  saveSurvey(survey: { FirstName: string, LastName: string }): Observable<any> {
-    return this.http.post(this.apiUrl, survey);
+  saveSurvey(survey: any): Observable<any> {
+    return this.http.post<any>(this.apiUrl, survey);
   }
 
   getSurvey(): Observable<any> {

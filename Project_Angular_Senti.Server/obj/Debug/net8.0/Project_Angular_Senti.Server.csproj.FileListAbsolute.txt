@@ -351,4 +351,5 @@ C:\Users\bombe\source\repos\GumdraXD\Project_Senti\Project_Angular_Senti.Server\
 C:\Users\bombe\source\repos\GumdraXD\Project_Senti\Project_Angular_Senti.Server\obj\Debug\net8.0\Project_Angular_Senti.Server.pdb
 C:\Users\bombe\source\repos\GumdraXD\Project_Senti\Project_Angular_Senti.Server\obj\Debug\net8.0\Project_Angular_Senti.Server.genruntimeconfig.cache
 C:\Users\bombe\source\repos\GumdraXD\Project_Senti\Project_Angular_Senti.Server\obj\Debug\net8.0\ref\Project_Angular_Senti.Server.dll
+C:\Users\bombe\source\repos\GumdraXD\Project_Senti\Project_Angular_Senti.Server\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\bombe\source\repos\GumdraXD\Project_Senti\Project_Angular_Senti.Server\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
