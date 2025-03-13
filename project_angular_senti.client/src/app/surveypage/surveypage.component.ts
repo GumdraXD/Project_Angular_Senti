@@ -2,17 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
-import { SurveyService } from '../services/survey.service';
 
+import { SurveyService } from '../services/survey.service';
 // https://angular.dev/guide/forms#data-flow-in-reactive-forms
+
 
 @Component({
   selector: 'app-surveypage',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './surveypage.component.html',
-  styleUrl: './surveypage.component.css'
+  styleUrls: ['./surveypage.component.css']
 })
+
 export class SurveypageComponent implements OnInit {
   surveyQuestions = [
     { question: 'Was the event staff professional and courteous?', type: 'scale' },
@@ -48,8 +50,8 @@ export class SurveypageComponent implements OnInit {
         return new FormControl('');
     }
   }
+  
   constructor(private surveyService: SurveyService) { }
-
   message = '';
 
   onSubmit(): void {
@@ -71,6 +73,11 @@ export class SurveypageComponent implements OnInit {
           this.myForm.reset();
         }, error: () => this.message = 'Error submitting survey!'
       });
+
+  onSubmit(): void {
+    if (this.myForm.valid) {
+      console.log('Survey Data:', this.myForm.value);
+
     } else {
       console.log('Form is invalid');
     }
@@ -90,5 +97,4 @@ export class SurveypageComponent implements OnInit {
     }
     return convertedResponses;
   }
-
 }
