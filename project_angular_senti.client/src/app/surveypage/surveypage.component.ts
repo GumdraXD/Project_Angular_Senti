@@ -56,7 +56,11 @@ export class SurveypageComponent implements OnInit {
     if (this.myForm.valid) {
       const surveyData = {
         respondent: "Anonymous",
-        responses: this.convertResponsesToStrings(this.myForm.value)
+        surveyResponses: this.surveyQuestions.map(question => ({
+          question: question.question,
+          response: this.myForm.value[question.question].toString()
+        }))
+        //responses: this.convertResponsesToStrings(this.myForm.value)
       };
 
       console.log('Survey Data:', JSON.stringify(surveyData, null, 2));
@@ -73,10 +77,15 @@ export class SurveypageComponent implements OnInit {
   }
 
   private convertResponsesToStrings(responses: { [key: string]: any }): { [key: string]: string } {
-    const convertedResponses: { [key: string]: string } = {};
+    const convertedResponses: { [key: string]: any } = {};
     for (const key in responses) {
       if (responses.hasOwnProperty(key)) {
-        convertedResponses[key] = responses[key].toString();
+        const value = responses[key];
+        if (typeof value === 'number' || typeof value === 'boolean') {
+          convertedResponses[key] = value;
+        } else {
+          convertedResponses[key] = responses[key].toString();
+        }
       }
     }
     return convertedResponses;

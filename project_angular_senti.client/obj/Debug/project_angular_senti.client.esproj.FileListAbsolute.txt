@@ -1,2 +1,3 @@
 C:\CSULA\Project_Angular_Senti\project_angular_senti.client\obj\Debug\project_angular_senti.client.esproj.CoreCompileInputs.cache
 C:\Users\bombe\source\repos\GumdraXD\Project_Senti\project_angular_senti.client\obj\Debug\project_angular_senti.client.esproj.CoreCompileInputs.cache
+C:\Users\bombe\source\repos\GumdraXD\Project_Senti Copy_2\Project_Senti\project_angular_senti.client\obj\Debug\project_angular_senti.client.esproj.CoreCompileInputs.cache

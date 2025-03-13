@@ -11,7 +11,7 @@ using Project_Angular_Senti.Server.Data;
 namespace Project_Angular_Senti.Server.Migrations
 {
     [DbContext(typeof(SurveyContext))]
-    [Migration("20250305063332_InitialMigration")]
+    [Migration("20250312213525_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -36,13 +36,51 @@ namespace Project_Angular_Senti.Server.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Responses")
+                    b.HasKey("Id");
+
+                    b.ToTable("SSurveyss");
+                });
+
+            modelBuilder.Entity("Project_Angular_Senti.Server.Model.SurveyResponse", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Question")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Response")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SurveyId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.ToTable("SurveyDBs");
+                    b.HasIndex("SurveyId");
+
+                    b.ToTable("SurveyResponses");
+                });
+
+            modelBuilder.Entity("Project_Angular_Senti.Server.Model.SurveyResponse", b =>
+                {
+                    b.HasOne("Project_Angular_Senti.Server.Model.Survey", "Survey")
+                        .WithMany("SurveyResponses")
+                        .HasForeignKey("SurveyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Survey");
+                });
+
+            modelBuilder.Entity("Project_Angular_Senti.Server.Model.Survey", b =>
+                {
+                    b.Navigation("SurveyResponses");
                 });
 #pragma warning restore 612, 618
         }

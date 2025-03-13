@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "aq2YmmgghlI=",
+  "dgSpecHash": "caLsv+EB7gY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\bombe\\source\\repos\\GumdraXD\\Project_Senti\\Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj",
+  "projectFilePath": "C:\\Users\\bombe\\source\\repos\\GumdraXD\\Project_Senti Copy_2\\Project_Senti\\Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bombe\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\bombe\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\bombe\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\bombe\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\bombe\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.13\\microsoft.aspnetcore.openapi.8.0.13.nupkg.sha512",
-    "C:\\Users\\bombe\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.13\\microsoft.aspnetcore.spaproxy.8.0.13.nupkg.sha512",
+    "C:\\Users\\bombe\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.14\\microsoft.aspnetcore.spaproxy.8.0.14.nupkg.sha512",
     "C:\\Users\\bombe\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\bombe\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",
     "C:\\Users\\bombe\\.nuget\\packages\\microsoft.build.locator\\1.7.8\\microsoft.build.locator.1.7.8.nupkg.sha512",

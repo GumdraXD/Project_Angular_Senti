@@ -20,9 +20,9 @@ namespace Project_Angular_Senti.Server.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> saveSurvey([FromBody] Survey survey)
+        public async Task<IActionResult> saveSurvey([FromBody] SurveyRequest surveyRequest)
         {
-            if (survey == null) return BadRequest("Invalid survey data.");
+            if (surveyRequest == null) return BadRequest("Invalid survey data.");
             if (!ModelState.IsValid) {
                 foreach (var error in ModelState)
                 {
@@ -30,11 +30,21 @@ namespace Project_Angular_Senti.Server.Controllers
                 }
                 return BadRequest(ModelState); 
             }
-            
+
+            var survey = new Survey
+            {
+                Respondent = surveyRequest.Respondent,
+                SurveyResponses = surveyRequest.SurveyResponses.Select(r => new SurveyResponse
+                {
+                    Question = r.Question,
+                    Response = r.Response,
+                }).ToList()
+            };
 
             _context.Survey.Add(survey);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetSurveyById), new { id = survey.Id }, survey);
+            return Ok(new { message = "Survey submitted successfully!", surveyId = survey.Id });
+            //return CreatedAtAction(nameof(GetSurveyById), new { id = survey.Id }, survey);
         }
 
         [HttpGet]
