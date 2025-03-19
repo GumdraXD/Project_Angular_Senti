@@ -1,0 +1,46 @@
+<div class="navbar">
+  <img class="logo" src="https://www.qtcm.com/wp-content/uploads/2023/12/Leidos-QTC-lockup-2c-rgb-@2x.png" alt="Logo" />
+  <div class="divider"></div>
+
+  <button class="bar-button" routerLink="/">
+    <!-- Home Button -->
+    <span class="button-title">Home</span>
+  </button>
+
+  <div class="divider"></div>
+  <button class="bar-button" routerLink="/reports">
+    <span class="button-title">Reports And Analysis</span>
+  </button>
+
+  <div class="divider"></div>
+  <button class="bar-button" routerLink="/settings">
+    <span class="button-title">Settings</span>
+  </button>
+
+  <div class="divider"></div>
+  <button class="bar-button" routerLink="/survey">
+    <!-- Help Button (Navigates to Help Page) -->
+    <span class="button-title">Surveys</span>
+  </button>
+
+  <div class="divider"></div>
+  <button class="bar-button" routerLink="/help">
+    <!-- Help Button (Navigates to Help Page) -->
+    <span class="button-title">Help</span>
+  </button>
+
+  <div class="divider"></div>
+  <button class="bar-button">
+    <span class="logout">Logout</span>
+  </button>
+
+  <div class="divider"></div>
+  <button class="profile" routerLink="/profile">
+    <img class="logo" src="https://static.vecteezy.com/system/resources/thumbnails/019/879/186/small_2x/user-icon-on-transparent-background-free-png.png" alt="Profile" />
+  </button>
+</div>
+
+<!-- Page content will change dynamically here -->
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

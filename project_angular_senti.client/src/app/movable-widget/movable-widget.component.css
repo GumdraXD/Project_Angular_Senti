@@ -1,0 +1,50 @@
+.widget {
+  position: absolute;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #c0c0c0;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  cursor: move;
+}
+
+.widget-content {
+  padding-left: 15px;
+}
+
+.delete-widget-button {
+  position: absolute;
+  right: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-widget-button:hover {
+  background-color: darkred;
+}
+
+.widget-title {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.widget-input {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  outline: none;
+  padding: 2px;
+  margin-top: 10px;
+}

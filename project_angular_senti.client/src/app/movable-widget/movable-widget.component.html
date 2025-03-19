@@ -1,0 +1,21 @@
+<div class="widget"
+     [ngStyle]="{ top: posY + 'px', left: posX + 'px' }"
+     (mousedown)="startDrag($event)">
+  <div class="widget-content">
+
+    <h3 *ngIf="!isEditing" (click)="enableEditing()" class="widget-title">
+      {{ title }}
+      <button class="delete-widget-button" (click)="deleteWidget()">-</button>
+    </h3>
+
+    <input *ngIf="isEditing"
+           #titleInput
+           [(ngModel)]="title"
+           (blur)="disableEditing()"
+           (keydown.enter)="disableEditing()"
+           class="widget-input" />
+
+    <p>{{ content }}</p>
+    <img class="image" *ngIf="imageUrl" [src]="imageUrl" alt="Widget Image">
+  </div>
+</div>

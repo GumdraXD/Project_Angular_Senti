@@ -1,0 +1,29 @@
+.reports-container {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  height: 100vh; 
+  margin-top: 100px;
+}
+
+.add-widget-button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  background-color: lawngreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-widget-button:hover {
+  background-color: darkgreen;
+}
+
+.divider {
+  width: 20px;
+  height: auto;
+  display: inline-block;
+}

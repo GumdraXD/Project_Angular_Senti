@@ -1,0 +1,15 @@
+<div class="reports-container">
+
+
+  <h1>Insert Data Table</h1>
+  <div class="divider"></div>
+  <button class="add-widget-button" (click)="addWidget()">+</button>
+
+  <div *ngFor="let widget of widgets">
+    <app-movable-widget [id]="widget.id"
+                        [title]="widget.title"
+                        (remove)="deleteWidget($event)"></app-movable-widget>
+  </div>
+
+
+</div>

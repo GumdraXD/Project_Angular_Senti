@@ -1,0 +1,28 @@
+<div class="settings-container">
+  <h1>Settings Page</h1>
+  <div class="upload-container">
+    <h2>Upload CSV File</h2>
+
+    <input type="file" (change)="onFileSelected($event)" />
+    <br />
+
+    <label for="identifierColumn">Column for Table Naming:</label>
+    <input type="text" id="identifierColumn" [(ngModel)]="identifierColumn" />
+
+    <button (click)="uploadFile()" [disabled]="!selectedFile">Upload</button>
+
+    <div *ngIf="progress > 0">
+      <progress [value]="progress" max="100"></progress>
+      <span>{{ progress }}%</span>
+    </div>
+
+    <p *ngIf="message">{{ message }}</p>
+
+    <h3 *ngIf="csvData.length">CSV Preview (First 5 Rows)</h3>
+    <table *ngIf="csvData.length" class="preview-table">
+      <tr *ngFor="let row of csvData">
+        <td *ngFor="let cell of row">{{ cell }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
