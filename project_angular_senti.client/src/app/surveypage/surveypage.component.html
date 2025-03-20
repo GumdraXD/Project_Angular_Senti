@@ -1,3 +1,36 @@
 <div class="survey-container">
   <h1>Input Survey Data Here...</h1>
+
+  <div class="upload-container">
+    <h2>Upload CSV File</h2>
+
+    <input type="file" (change)="onFileSelected($event)" />
+    <br />
+
+    <button (click)="uploadFile()" [disabled]="!selectedFile">Upload</button>
+
+    <div *ngIf="progress > 0">
+      <progress [value]="progress" max="100"></progress>
+      <span>{{ progress }}%</span>
+    </div>
+
+    <p *ngIf="message">{{ message }}</p>
+  </div>
+
+</div>
+
+<div *ngIf="csvData.length > 0">
+  <h3>CSV Preview</h3>
+  <table>
+    <thead>
+      <tr>
+        <th *ngFor="let header of csvData[0]">{{ header }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of csvData.slice(1)">
+        <td *ngFor="let cell of row">{{ cell }}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

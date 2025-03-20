@@ -19,12 +19,14 @@ namespace Project_Angular_Senti.Server.Controllers
         }
 
         [HttpPost("upload")]
-        public async Task<IActionResult> UploadCsv([FromForm] CsvUploadModel model)
+        public async Task<IActionResult> UploadCsv([FromForm] IFormFile file)
         {
-            if (model.File == null || model.File.Length == 0)
+            if (file == null || file.Length == 0)
                 return BadRequest("CSV file is required.");
 
-            string result = await _csvService.ProcessAsync(model.File, model.IdentifierColum);
+            string tableName = Path.GetFileNameWithoutExtension(file.FileName);
+
+            string result = await _csvService.ProcessAsync(file, tableName);
             return Ok(new { message = result });
         }
     }

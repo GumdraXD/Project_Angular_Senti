@@ -40,7 +40,7 @@ namespace Project_Angular_Senti.Server
                 options.AddPolicy("AllowAngularApp",
                     policy =>
                     {
-                        policy.WithOrigins("http://localhost:4200")  // Allow requests from Angular
+                        policy.WithOrigins("https://localhost:4200")  // Allow requests from Angular
                               .AllowAnyHeader()
                               .AllowAnyMethod();
                     });

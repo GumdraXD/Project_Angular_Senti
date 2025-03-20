@@ -3,6 +3,6 @@
     public class CsvUploadModel
     {
         public IFormFile File { get; set; } = null!;
-        public string IdentifierColum { get; set; } = "DatasetName";
+        public string IdentifierColumn { get; set; }
     }
 }
