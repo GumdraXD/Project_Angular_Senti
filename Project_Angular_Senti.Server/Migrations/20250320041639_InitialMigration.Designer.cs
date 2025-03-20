@@ -11,7 +11,7 @@ using Project_Angular_Senti.Server.Data;
 namespace Project_Angular_Senti.Server.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250319075237_InitialMigration")]
+    [Migration("20250320041639_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
