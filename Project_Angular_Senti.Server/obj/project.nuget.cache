@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "caLsv+EB7gY=",
+  "dgSpecHash": "aq2YmmgghlI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\bombe\\source\\repos\\GumdraXD\\Project_Senti Copy_2\\Project_Senti\\Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj",
+  "projectFilePath": "C:\\Users\\bombe\\source\\repos\\GumdraXD\\Project_Senti\\Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bombe\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\bombe\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

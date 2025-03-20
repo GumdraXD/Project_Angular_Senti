@@ -5397,11 +5397,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bombe\\source\\repos\\GumdraXD\\Project_Senti Copy_2\\Project_Senti\\Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj",
+      "projectUniqueName": "C:\\Users\\bombe\\source\\repos\\GumdraXD\\Project_Senti\\Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj",
       "projectName": "Project_Angular_Senti.Server",
-      "projectPath": "C:\\Users\\bombe\\source\\repos\\GumdraXD\\Project_Senti Copy_2\\Project_Senti\\Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj",
+      "projectPath": "C:\\Users\\bombe\\source\\repos\\GumdraXD\\Project_Senti\\Project_Angular_Senti.Server\\Project_Angular_Senti.Server.csproj",
       "packagesPath": "C:\\Users\\bombe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bombe\\source\\repos\\GumdraXD\\Project_Senti Copy_2\\Project_Senti\\Project_Angular_Senti.Server\\obj\\",
+      "outputPath": "C:\\Users\\bombe\\source\\repos\\GumdraXD\\Project_Senti\\Project_Angular_Senti.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
